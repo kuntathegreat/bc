@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
+	<title>My account</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<section class="booking">
+		<img src="../images/logo.png" alt="" class="logo">
+		<input type="checkbox" id="click">
+		<label for="click" class="menu_btn">
+			<h6>MENU</h6>
+			 <img src="../images/menu.png" class="icon">
+		</label>
+		<a href="./appt.html" class="normal">BOOK APPOINTMENT</a>
+		<nav class="navbar" id="navbar">
+		<ul>
+			<li><a href="./corporate.html">Corporate booking</a></li>
+			<li><a href="./myaccount.html">My account</a></li>
+			<li><a href="./cart.html">Cart</a></li>
+		</ul>
+		<li class="Cbook"><a href="#">Contact Us <i class="fas fa-arrow-circle-right"></i></a></li>
+	    <li class="main"><a href="../index.html">Back to main site <i class="far fa-long-arrow-alt-right"></i></a></li>
+	</nav>
+	</section>
+	<section class="abt_banner">
+	</section>
+
+	<section class="about_link">
+		<h4>My Account</h4>
+		<ul>
+			<a href="../index.html">Home>></a>
+			<a href="../aboutUs/about.html">My account</a>
+		</ul>
+	</section>
+     
+     <section class="acc section-m1" data-aos="fade-up">
+      <div class="row">	
+      	<h4>Login</h4>
+      	<form class="login">
+      	<div>	
+         <label class="required">Username or email address</label>
+      	 <input type="email" name="email">
+      	</div>	
+      	<div>
+      	<label  for="pass" class="required">Password</label>
+      	<input type="password" name="password" id="password">
+      	<i class="far fa-eye" id="eye" onclick="toggle()"></i>	
+      	</div>
+      	<div class="login_submit">
+      	<button value="submit">login</button>
+        <input type="checkbox" value="remember_me">  <label for="remember_me">Remember me</label>
+      	</div>
+      	<br>
+      	<a href="#">Lost your password?</a>
+      	</form>
+      </div>
+
+      <div class="row">	
+        <h4>Register</h4>
+        <form class="register">	
+        <div>
+           <label class="required">Email address</label>
+      	   <input type="email" name="email">
+      	    <p>A password will be sent to your email address.</p>
+      	     <br>	
+      	     <p>Your personal data will be used to support your experience <br>	throughout this website, to manage access to your account,<br> and for other purposes described in our <a href="#">privacy policy</a></p>	
+           </div>
+           <div class="login_submit">	
+             <button value="submit">Regsiter</button>
+           </div>
+        </form>
+      </div>
+     </section>
+     <footer>
+	<div class="footer section-p1" data-aos="fade-up">
+	<div class="aboutUs">
+		<h4>ABOUT US</h4>
+		<p>Blue Coat Medical Diagnostics Limited’s expertise is rooted in our dedication to provide physicians with timely, high-quality laboratory tests and services that help them provide improved patient care.</p>
+		<br>
+		<a href="#">Read more <i class="fas fa-arrow-circle-right"></i></a>
+	</div>
+
+	<div class="col">
+		<h4>QUICK LINKS</h4>
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact Us</a>
+		<a href="#">Covid-19 Booking</a>
+		<a href="#">Corporate Booking</a>
+	</div>
+
+	<div class="col contact_foot">
+		<h4>CONTACT US</h4>
+		<div>
+    		<i class="fas fa-map-marker-alt"></i>
+    		<a href="#">2nd Floor Granet Plaza, Lekki Expressway, Lagos</a>
+    	</div>
+    	<div>
+    		<i class="fas fa-envelope"></i>
+    		<a href="mailto:info@bluecoatdiagnostics.com">info@bluecoatdiagnostics.com</a>
+    	</div>
+    	<div>
+    		<i class="fas fa-phone-alt"></i>
+    		<a href="#">08105684336</a>
+    	</div>
+	</div>
+
+	<div class="col follow">
+			<h4>Follow us</h4>
+			<div class="icon">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<br>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</div>
+     
+     <div class="copyright">
+     <p>&copy; 2022 All rights reserved</p>
+     <a href="https://www.ftsl-ng.com">website by: Flyte Technology and Solutions Ltd</a>
+	</div>
+</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+     AOS.init({
+     	offset: 200,
+     	duration: 1500,
+     	delay: 0,
+     });
+
+  </script>
+	<script src="../script.js"></script>
+</body>
+</html>

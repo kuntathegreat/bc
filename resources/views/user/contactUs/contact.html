@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+	<section class="header_1">
+		<h5>Every interaction with our patients is an opportunity!</h5>
+		<div class="icon">
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-linkedin-in"></i>
+		</div>
+		<a href="./booking/booking.html" class="normal">BOOK APPOINTMENT</a>
+	</section>
+
+	<section class="header_2 container">
+		<a href="#"><img src="../images/logo.png" alt="" class="logo"></a>
+		<div class="hamburger" id="hamburger">
+			<h6>MENU</h6>
+			<img src="../images/menu.png" class="icon">
+		</div>
+
+		<div class="txt">
+			<div>
+			<h3>OUR LOCATION</h3>
+			<span>9, Owo Avenue, Ijapo Estate, Akure</span>
+			</div>
+			<div>
+			<h3>08135285656</h3>
+			<span>Call Us Now- Prompt Customer Support</span>
+		</div>
+		</div>
+	</section>
+
+	<section class="header_3">
+     <nav class= "navbar" id="navbar">
+     	<div class="left">
+     	<ul>
+     		<li><a href="../index.html">Home</a></li>
+     		<li><a href="../aboutUs/about.html">About</a></li>
+     		<li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+			<ul class="dropdown show">
+          <li><a href="../services/covid.html">COVID-19 RT-PCR</a></li>
+          <li><a href="../services/routine.html">Routine Pathology Investigation</a></li>
+          <li><a href="../services/molecular.html">Molecular Biology Investigation</a></li>
+          <li><a href="../services/dna.html">DNA Paternity Test</a></li>
+        </ul>	
+     		</li>
+     	</ul>
+     </div>
+     	<div class="right">
+     	<ul>
+     	<li><a href="../booking/booking.html">COVID-19 Booking</a></li>
+     	<li><a href="../booking/corporate.html">Coporate Booking</a></li>
+     	<li><a href="./contact.html">Contact Us</a></li>
+     </ul>
+     </div>
+     <div class="txt_bottom" id="bottom">
+     	   <div>
+			<h3>08135285656</h3>
+			<span>Call Us Now- Prompt Customer Support</span>
+		</div>
+			<div>
+			<h3>OUR LOCATION</h3>
+			<span>9, Owo Avenue, Ijapo Estate, Akure</span>
+			</div>
+     </nav>
+	</section>
+    <section class="contact_us section-m1" data-aos="fade-up">
+    	<div class="contact_left">
+    		<div>
+    		<h4>Address</h4>
+    		<i class="fas fa-map-marker-alt"></i>
+    		<a href="#">9, Owo Avenue, Ijapo Estate, (Opposite Heritage/Bliss World Hotel) Akure, Ondo State</a>
+    	</div>
+    	<div>
+    		<h4>Email</h4>
+    		<i class="fas fa-envelope"></i>
+    		<a href="mailto:info@bluecoatdiagnostics.com">info@bluecoatdiagnostics.com</a>
+    	</div>
+    	<div>
+    		<h4>Phone</h4>
+    		<i class="fas fa-phone-alt"></i>
+    		<a href="#">08105684336</a>
+    	</div>
+    	</div>
+    	<div class="contact_right">
+    		<form class="contact_form" action="">
+				{{ csrf_field() }}
+				{{ method_field("PUT") }}
+    			<div>
+    			<label>Name</label>
+    			<input type="name" name="name" placeholder="Name" value="{{ $user->name }}" required>
+    			<label>Phone no</label>
+    			<input type="tel" name="tel" placeholder="Phone no" value="{{ $user->phone }}" required>
+    		</div>
+    		 <div>
+    			<label>Email</label>
+    			<input type="email" name="email" placeholder="Email" value="{{ $user->email }}" required>
+    			<label>Subject</label>
+    			<input type="name" name="name" placeholder="Subject" value="{{ $user->subject }}" required>
+    		</div>
+    		<label>Message</label>
+    		<textarea rows="4" placeholder="Your Message" value="{{ $user->message }}" required></textarea>
+    		<button value="submit">Submit</button>
+    		</form>
+    	</div>
+    </section>
+    <section class="map section-p1" data-aos="fade-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.644019708321!2d3.5207021!3d6.4375658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6caa5e36978d5010!2sGarnet%20Plaza!5e0!3m2!1sen!2sng!4v1643471737343!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    <footer>
+	<div class="footer section-p1" data-aos="fade-up">
+	<div class="aboutUs">
+		<h4>ABOUT US</h4>
+		<p>Blue Coat Medical Diagnostics Limited’s expertise is rooted in our dedication to provide physicians with timely, high-quality laboratory tests and services that help them provide improved patient care.</p>
+		<br>
+		<a href="#">Read more <i class="fas fa-arrow-circle-right"></i></a>
+	</div>
+
+	<div class="col">
+		<h4>QUICK LINKS</h4>
+		<a href="#">Home</a>
+		<a href="#">About Us</a>
+		<a href="#">Contact Us</a>
+		<a href="#">Covid-19 Booking</a>
+		<a href="#">Corporate Booking</a>
+	</div>
+
+	<div class="col contact_foot">
+		<h4>CONTACT US</h4>
+		<div>
+    		<i class="fas fa-map-marker-alt"></i>
+    		<a href="#">2nd Floor Granet Plaza, Lekki Expressway, Lagos</a>
+    	</div>
+    	<div>
+    		<i class="fas fa-envelope"></i>
+    		<a href="mailto:info@bluecoatdiagnostics.com">info@bluecoatdiagnostics.com</a>
+    	</div>
+    	<div>
+    		<i class="fas fa-phone-alt"></i>
+    		<a href="#">08105684336</a>
+    	</div>
+	</div>
+
+	<div class="col follow">
+			<h4>Follow us</h4>
+			<div class="icon">
+				<i class="fab fa-facebook-f"></i>
+				<i class="fab fa-twitter"></i>
+				<br>
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-linkedin-in"></i>
+			</div>
+		</div>
+	</div>
+     
+     <div class="copyright">
+     <p>&copy; 2022 All rights reserved</p>
+     <a href="https://www.ftsl-ng.com">website by: Flyte Technology and Solutions Ltd</a>
+	</div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+     AOS.init({
+        offset: 200,
+        duration: 1500,
+        delay: 0,
+     });
+
+  </script>
+    <script src="../script.js"></script>
+
+</body>
+</html>
